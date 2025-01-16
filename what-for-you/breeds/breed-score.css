@@ -1,0 +1,84 @@
+.breed-trait-header {
+    padding-bottom: 10px;
+    color: #ffffff99;
+}
+
+.breedTrait {
+    width: 330px;
+    padding: 12px 26px 12px 26px;
+    background-color: #cee9ea1a;
+    border-top-right-radius: 16% 85%;
+    border-bottom-left-radius: 16% 85%;
+    margin: -9px 0px;
+}
+
+.breedTraitMirrored {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 16% 85%;
+    border-bottom-right-radius: 16% 85%;    
+}
+
+.breed-trait__name {
+    color: #ffffffd6;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.breed-trait-score__score-wrap {
+    display: flex;
+}
+
+.breed-trait-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.breed-trait-score__score-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.breed-trait-score__score-unit {
+    background-color: #ccc;
+    margin-right: 3px;
+    border-radius: 22px;
+    height: 8px;
+    width: 100%;
+}
+
+.breed-trait-score__score-unit--filled {
+    background-color: #f78104;
+    margin-right: 3px;
+    border-radius: 22px;
+    height: 8px;
+    width: 100%;
+}
+
+/* .breed-trait-score__score-unit:not(:last-child) {
+    margin-right: 3px;
+} */
+
+.heading {
+    margin: 20px 0px!important;
+    border-bottom: 4px solid var(--text-color-dark-orange);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-color-dark-orange);
+}
+
+@media (max-width: 1482px) {
+
+    .breed-back-box {
+        width: 100%!important;
+    }
+
+    .breedTrait {
+        margin: 0!important;
+        border-radius: 0!important;
+        width: 100%;
+    }
+}
