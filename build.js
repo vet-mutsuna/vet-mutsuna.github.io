@@ -102,7 +102,6 @@ const replaceHtmlFileHref = (dirRoot) => {
     }
 };
 
-fs.mkdirSync(BUILD_DIR);
 
 // Remove build directory and its content
 fs.rmSync(BUILD_DIR, {recursive: true })
