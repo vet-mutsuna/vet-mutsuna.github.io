@@ -671,7 +671,7 @@ h2 {
 
 .other-article {
     display         : flex;
-    justify-content : space-around;
+    justify-content : space-between;
     margin          : 12px;
     margin-top      : 36px;
 }
