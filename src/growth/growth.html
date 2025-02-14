@@ -1,0 +1,61 @@
+<!-- HEADER -->
+<include what="@@layout/header.html" var:title="Растеж"></include>
+<include what="@@layout/menu.html"></include>
+
+
+    <section id="content-section">
+
+        <section id="article-review">
+            <div>
+                <a href="./growth/dog/growth.html"><button id="dog-btn">Куче</button></a> 
+                или 
+                <a href="./growth/cat/growth.html"><button id="cat-btn">Коте</button></a>
+            </div>
+            <div class="choose-message">Избери вид любимец</div>
+            <ol>
+                <li>Фази на растеж</li>
+                <li>Грижа за осиротели</li>
+                <li>Мъжко или женско имам?</li>
+                <li>Изчисляване на възрастта в "животински" години</li>
+                <li>Полов цикъл</li>
+                <li>Възпроизвеждане</li>
+                <li>Бременност</li>
+                <li>Раждане</li>
+                <li>Кастрация</li>
+                <li>Старост</li>
+            </ol>
+        </section>
+
+        <section id="main-content">
+            <div id="content" class="content">
+                <div id="overlay"></div>
+
+                <div class="choose-pet-text">Избери вид любимец:</div>
+                <div class="choose-pet-buttons" style="display: block;">
+                    
+                        <div id="home--dog-button" style="--clr:#008083"><a href="./growth/dog/growth.html">
+                            <span>куче</span><i></i>
+                        </a></div>
+                    
+                        <div id="home--cat-button" style="--clr:#b55d00"><a href="./growth/cat/growth.html">
+                            <span>коте</span><i></i>
+                        </a></div>
+                </div>
+
+                <div class="choose-pet">
+                    <div class="home--dog" id="home--dog-section"></div>
+                    <div class="home--cat" id="home--cat-section"></div>
+                </div>
+
+            <!-- SHARE -->
+            <include what="@@layout/share.html"></include>
+                
+            </div>
+
+        </section>
+
+    </section>
+
+
+<!-- FOOTER -->
+<include what="@@layout/footer.html"></include>

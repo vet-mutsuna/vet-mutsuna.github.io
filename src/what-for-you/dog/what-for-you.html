@@ -1,0 +1,35 @@
+<!-- HEADER -->
+<include what="@@layout/header.html" var:title="Кое животно е подходящо за теб"></include>
+<include what="@@layout/menu.html"></include>
+
+<section id="content-section">
+
+    <section id="article-review">
+        <include what="@@components/what-for-you-dog.html"></include>
+    </section>
+
+    <section id="main-content">
+        <div id="content" class="content">
+            <div id="overlay"></div>
+            <div id="article">
+
+                <div id="articleContent" style="background: transparent;">
+                    <div id="article-content--dogs">
+                        <h2 class="center-content">Актуални статии</h2>
+                        <div class="current-articles">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SHARE -->
+            <include what="@@layout/share.html"></include>
+
+        </div>
+    </section>
+</section>
+
+
+<!-- FOOTER -->
+<include what="@@layout/footer.html"></include>

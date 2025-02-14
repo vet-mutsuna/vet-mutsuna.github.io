@@ -1,0 +1,65 @@
+<!-- HEADER -->
+<include what="@@layout/header.html" var:title="Как да се грижим за любимеца"></include>
+<include what="@@layout/menu.html"></include>
+
+<section id="content-section">
+
+    <section id="article-review">
+        <div>
+            <a href="./how-take-care/dog/how-take-care.html">
+                <button id="dog-btn">Куче</button>
+            </a> 
+            или 
+            <a href="./how-take-care/cat/how-take-care.html">
+                <button id="cat-btn">Коте</button>
+            </a>
+        </div>
+        <div class="choose-message">Избери вид любимец</div>
+        <ol>
+            <li>Как общуват кучетата/ котките</a>
+            <li>Режим на сън</a>
+            <li>Обучение за ходене на тоалетна</a>
+            <li>Грижа за козина</a>
+            <li>Грижа за нокти</a>
+            <li>Профилактичен преглед</a>
+            <li>Сравни цените между видовете храни (калкулатор)</a>
+        </ol>
+    </section>
+
+    
+    <section id="main-content">
+        <div id="content" class="content">
+            <div id="overlay"></div>
+            <div id="article">
+                
+                <div class="choose-pet-text">Избери вид любимец:</div>
+                <div class="choose-pet-buttons" style="display: block;">
+                    
+                        <div id="home--dog-button" style="--clr:#008083">
+                            <a href="./how-take-care/dog/how-take-care.html">
+                                <span>куче</span><i></i>
+                            </a>
+                        </div>
+                    
+                        <div id="home--cat-button" style="--clr:#b55d00"><a href="./how-take-care/cat/how-take-care.html">
+                            <span>коте</span><i></i>
+                        </a></div>
+                </div>
+
+                <div class="choose-pet">
+                    <div class="home--dog" id="home--dog-section"></div>
+                    <div class="home--cat" id="home--cat-section"></div>
+                </div>
+
+            </div>
+
+            <!-- SHARE -->
+            <include what="@@layout/share.html"></include>
+
+        </div>
+    </section>
+</section>
+
+
+<!-- FOOTER -->
+<include what="@@layout/footer.html"></include>

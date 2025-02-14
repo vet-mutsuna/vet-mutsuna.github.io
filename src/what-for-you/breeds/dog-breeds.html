@@ -1,0 +1,165 @@
+<!-- HEADER -->
+<include what="@@layout/header.html" var:title="Породи кучета"></include>
+<include what="@@layout/menu.html"></include>
+
+
+
+<section id="content-section">
+    <section id="article-review">
+        <div>
+            <div>
+                <a href="./../dog/what-for-you.html"><button id="dog-btn-clicked">Куче</button></a>
+                или
+                <a href="../cat/what-for-you.html"><button id="cat-btn">Коте</button></a>
+            </div>
+            <div class="choose-message">Избери вид любимец</div>
+            <ol>
+                <li><a href="../dog/anatomy.html"><span class="bold">Анатомия</span> на кучето</a></li>
+                <li><a href="../dog/nature.html"><span class="bold">Природа</span> на кучето</a></li>
+                <li><a href="../dog/life-expectancy.html"><span class="bold">Продължителност</span> на живота на
+                        кучето</a></li>
+                <li><a href="../dog/brief-history.html">Кратка история на кучето</a></li>
+                <li><a href="../dog/perks.html"><span class="bold">Предимствата</span> да имаш куче</a></li>
+                <li><a href="../are-you-ready/are-you-ready.html">Въпросник: <span class="bold">Готов ли си</span> за
+                        куче?</a></li>
+                <li><a href="../breeds/dog-breed-selector.html">Въпросник: <span class="bold">Какво куче</span> да си
+                        взема?</a></li>
+                <li><a href="../breeds/dog-breeds.html">Библиотека с породи кучета</a></li>
+                <li><a href="../dog/young-or-adult.html"><span class="bold">Малко кученце или пораснало</span> куче да
+                        взема</a></li>
+                <li><a href="../dog/male-or-female.html"><span class="bold">Мъжко или женско</span> куче да взема</a>
+                </li>
+                <li><a href="../dog/where.html"><span class="bold">Откъде</span> мога да се сдобия с куче?</a></li>
+                <li><a href="../dog/before.html"><span class="bold">Въпросник</span> (Контролен списък) преди да си
+                        взема куче</a></li>
+            </ol>
+            <!-- <ol class="left-text">
+                    <li>Група 1: Овчарски и пастирски кучета (с изключение на швейцарско планинско куче)</li>
+                    <li>Група 2: Пинчери и шнауцери. Молосоиди и швейцарски планински кучета</li>
+                    <li>Група 3: Териери</li>
+                    <li>Група 4: Дакели</li>
+                    <li>Група 5: Шпицове и примитивен тип</li>
+                    <li>Група 6: Гончета (следотърсачи) и подобни</li>
+                    <li>Група 7: Ловни кучета, пойнтери </li>
+                    <li>Група 8: Апортиращи, претърсващи и работещи във вода кучета</li>
+                    <li>Група 9: Кучета компаньони и ”Той” кучета</li>
+                    <li>Група 10: Хрътки</li>
+                </ol> -->
+        </div>
+    </section>
+
+    <section id="main-content">
+        <div id="content" class="content">
+            <div id="overlay"></div>
+
+            <div id="articleContent">
+
+                <div id="breedSelector">
+                    <div id="breedSelector--search">
+                        <input type="search" placeholder="Потърси порода..." id="searchBreed">
+                        <button id="displayButton"></button>
+                    </div>
+                    <div style="position: relative;">
+                        <div id="breedSelector--dropdown"></div>
+                    </div>
+                </div>
+
+                <div id="dog-breed-intro">
+                    <p class="p20 justify">
+                        Обмисляте да си вземете куче, но не можете да решите каква порода да е? Или сте любител на тези
+                        четириноги? Тази библиотека съдържа всички породи, одобрени от <span class="bold">FCI
+                            (Fédération Cynologique Internationale)</span>, с която Българската национална федерация по
+                        кинология (БНФК) си партнира. Международната киноложка организация (FCI, <a
+                            href="https://www.fci.be/en/nomenclature/">www.fci.be</a>) е признала цели 359 породи
+                        кучета, които имат определен стандарт и държава-произход. На картата можете да видите
+                        страните-членки (лилав цвят) и страните-контрактори и асоциати (сив и жълт цветове).
+                    </p>
+                    <img src="./img/what-for-you/FCI-members.png">
+                </div>
+
+                <!-- Slider main container -->
+                <div id="breed-wrapper" style="display: none;">
+                    <div id="breed-heading"></div>
+
+                    <div class="breed-intro">
+                        <div id="breed-front-img">
+                            <div id="swiper-wrapper"></div>
+                        </div>
+
+                        <div class="breed-overview-box">
+                            <div id="breedInfo" class="breed-overview"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="breed-overview-box">
+                        <div id="breedInfoParagraph" class="contain"></div>
+                    </div>
+
+                    <div class="heading">
+                        Характеристики на породата
+                    </div>
+
+                    <div>
+                        <div class="breed-back-outer-box">
+                            <div>
+                                <img src="./img/mutsuna-logo-NEW.png" class="breed-box-img">
+                                <p class="breed-box-img-text" id="breed-name-background"></p>
+                                <p class="breed-box-img-text-logo">mutsuna.org</p>
+                            </div>
+                            <div class="breed-back-box breed-family">
+                                <div class="breed-trait-header">Семейство:</div>
+                                <div data-score="family" data-mirror="true"></div>
+                            </div>
+
+                            <div class="breed-back-box breed-physical">
+                                <div class="breed-trait-header">Физически:</div>
+                                <div data-score="physical" data-mirror="false"></div>
+                            </div>
+
+                            <div class="breed-back-box breed-social">
+                                <div class="breed-trait-header">Социални:</div>
+                                <div data-score="social" data-mirror="false"></div>
+
+                            </div>
+                            <div class="breed-back-box breed-personality">
+                                <div class="breed-trait-header">Характер:</div>
+                                <div data-score="character" data-mirror="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="heading">Библиотека на породите кучета</div class="heading">
+                <div class="breedLibrary">
+
+                    <div class="grid" id="breedCollection-grid"></div>
+
+                </div>
+
+                <ul>Библиографска справка:
+                    <li>The Complete Dog Breed Book, 2012, Helen Fewster et al.</li>
+                    <li>Veterinary Medical Guide to Dog and Cat Breeds, 2012, Jerold S. Bell</li>
+                    <li>Fédération Cynologique Internationale. FCI, 2023 - <a
+                            href="https://www.fci.be/en/nomenclature/">www.fci.be</a></li>
+                    <li>American Kennel Club. AKC,2023, DOg Breeds & Characteristics, <a
+                            href="https://www.akc.org/dog-breeds/german-shepherd-dog/">www.akc.org</a></li>
+                    <li>Българската национална федерация по кинология (БНФК) - <a href="https://www.bnfc.bg">bnfc.bg</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- SHARE -->
+            <include what="@@layout/share.html"></include>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- FOOTER -->
+<include what="@@layout/footer.html"></include>

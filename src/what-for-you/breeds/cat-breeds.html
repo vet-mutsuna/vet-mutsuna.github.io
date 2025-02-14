@@ -1,0 +1,107 @@
+<!-- HEADER -->
+<include what="@@layout/header.html" var:title="Породи котки"></include>
+<include what="@@layout/menu.html"></include>
+
+
+     <section id="content-section">
+        <section id="article-review">
+            <div>
+                <a href="./../dog/what-for-you.html"><button id="dog-btn">Куче</button></a> 
+                или 
+                <a href="../cat/what-for-you.html"><button id="cat-btn-clicked">Коте</button></a>
+            </div>
+            <div class="choose-message">Избери вид любимец</div>
+            <ol>
+                <li><a href="../cat/anatomy.html"><span class="bold">Анатомия</span> на котката</a></li>
+                <li><a href="../cat/nature.html"><span class="bold">Природа</span> на котката</a></li>
+                <li><a href="../cat/life-expectancy.html"><span class="bold">Продължителност</span> на живота на котката</a></li>
+                <li><a href="../cat/brief-history.html">Кратка история на котката</a></li>
+                <li><a href="../cat/perks.html"><span class="bold">Предимствата</span> да имаш котка</a></li>
+                <li><a href="./../are-you-ready-cat/are-you-ready.html">Въпросник: <span class="bold">Готов ли си</span> за котка?</a></li>
+                <li><a href="../breeds/cat-breeds.html">Библиотека с породи котки</a></li>
+                <li><a href="../cat/young-or-adult.html"><span class="bold">Малко котенце или пораснала</span> котка да взема</a></li>
+                <li><a href="../cat/male-or-female.html"><span class="bold">Мъжка или женска</span> котка да взема</a></li>
+                <li><a href="../cat/where.html"><span class="bold">Откъде</span> мога да се сдобия с котка?</a></li>
+                <li><a href="../cat/before.html"><span class="bold">Въпросник</span> (Контролен списък) преди да си взема котка</a></li>
+            </ol>
+            
+        </section> 
+    
+        <section id="main-content">
+            <div id="content" class="content">
+                <div id="overlay"></div>
+
+                <div id="articleContent">
+
+                    <div id="breedSelector">
+                        <div id="breedSelector--search">
+                            <input type="search" placeholder="Потърси порода..." id="searchBreed">
+                            <button id="displayButton"></button>
+                        </div>
+                        <div style="position: relative;">
+                            <div id="breedSelector--dropdown"></div>
+                        </div>
+                    </div>
+
+                    <div id="cat-breed-intro">
+                        <p class="p20 justify">
+                            Обмисляте да си вземете котка, но не можете да решите каква порода да е? Или сте любител на тези четириноги? Тази библиотека съдържа породи, одобрени от <span class="bold"><a href="https://wcf.de/en/">Световната федерация за породите котки</a></span> (the World Cat Federation - WCF), с която <a href="https://www.felinologybg.com/">Съюзът на Фелинолозите в България</a> си партнира. Световната федерация за котки е признала цели 69 породи котки, които имат определен стандарт и държава-произход. 
+                            До 2025 год. освен тази организация, съществуват и други, които следят за стандарта на породите котки:
+                            <ol>
+                                <li>Международната организация за породи котки (The International Cat Association, TICA) с признати 73 породи котки.</li>
+                                <li>Френската асоциация за породи котки (the Cat Fanciers' Association, CFA) с признати 45 породи.</li>
+                                <li>Френската федерация за породи котки (the Fédération Internationale Féline, FIFe) с признати от нея 50 породи.</li>
+                                <li>Английската организация за породи котки (the Governing Council of the Cat Fancy, GCCF) - 45 породи.</li>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div id="breed-wrapper" style="display: none;">
+                        <div id="breed-heading"></div>
+
+                        <div class="breed-intro">
+                            <div id="breed-front-img">
+                                <div id="swiper-wrapper"></div>
+                            </div>
+    
+                            <div class="breed-overview-box">
+                                <div id="breedInfo" class="breed-overview"></div>
+                            </div>
+
+                        </div>
+                        
+
+                        <div class="breed-overview-box">
+                            <div id="breedInfoParagraph" class="contain"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="heading">Библиотека на породите котки</div>
+                    <div class="breedLibrary">
+
+                        <div class="grid" id="breedCatCollection-grid"></div>
+
+                    </div>
+
+                    <ul>Библиографска справка:
+                        <li>Световната федерация за котки (<a href="https://wcf.de/en/">the World Cat Federation - WCF</a>)</li>
+                        <li>Международната организация за породи котки (<a href="https://tica.org/">The International Cat Association, TICA</a>).</li>
+                        <li>Френската асоциация за породи котки (<a href="https://cfa.org/">the Cat Fanciers' Association, CFA</a>).</li>
+                        <li>Френската федерация за породи котки (<a href="https://fifeweb.org/">the Fédération Internationale Féline, FIFe</a>).</li>
+                        <li>Английската организация за породи котки (<a href="https://www.gccfcats.org/">the Governing Council of the Cat Fancy, GCCF</a>).</li>
+                        <li><a href="https://www.felinologybg.com/">Съюзът на Фелинолозите в България</a></li>
+                    </ul>
+
+                </div>
+
+            <!-- SHARE -->
+            <include what="@@layout/share.html"></include>
+                
+            </div>
+        </section>
+    </section>
+
+<!-- FOOTER -->
+<include what="@@layout/footer.html"></include>
