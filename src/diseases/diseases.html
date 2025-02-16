@@ -3,29 +3,11 @@
 <include what="@@layout/menu.html"></include>
 
     <section id="content-section">
-
+        
         <section id="article-review">
-            <div>
-                <a href="./diseases/dog/diseases.html"><button id="dog-btn">Куче</button></a> 
-                или 
-                <a href="./diseases/cat/diseases.html"><button id="cat-btn">Коте</button></a>
-            </div>
             <div class="choose-message">Избери вид любимец</div>
-            <ol>
-                <li>Кучешка парвовироза</li>
-                <li>Кучешка коронавироза</li>
-                <li>Гана</li>
-                <li>Ерлихиоза</li>
-                <li>Дирофилариоза</li>
-                <li>Бълхи</li>
-                <li>Кърлежи</li>
-                <li>Цестодоза</li>
-                <li>Тумор на млечната жлеза</li>
-                <li>Лимфома</li>
-                <li>Бяс</li>
-            </ol>
+            <include what="@@components/diseases-dog.html"></include>
         </section>
-
         
         <section id="main-content">
             <div id="content" class="content">
