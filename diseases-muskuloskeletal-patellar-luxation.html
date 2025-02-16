@@ -1,7 +1,7 @@
 <!-- HEADER --><!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Муцуна | Начало</title>
+    <title>Муцуна | Гана</title>
     <link rel="icon" href="./img/mutsuna-logo-round-nose-DARK.png">
     <link rel="stylesheet" href="./animations.css">
     <link rel="stylesheet" href="./home-menu.css">
@@ -626,251 +626,117 @@
 
 </header>
 
-<!-- Section -->
-<section id="main-content" style="
-                margin-left: 0;
-                width: 100%;
-                float: none;">    
-    <div id="content" class="content">
-        <div id="overlay"></div>
 
-        <div class="choose-pet-text">Избери вид любимец:</div>
-        <div class="center-text">(и натисни върху плюса)</div>
-        <div class="choose-pet-buttons">
-            <div id="home--dog-button" style="--clr:#008083"><span>куче</span><i></i></div>
-            <div id="home--cat-button" style="--clr:#b55d00"><span>коте</span><i></i></div>
-        </div>
+<section id="content-section">
 
-        <div class="choose-pet">
-            
-            <div class="home--dog" id="home--dog-section">
-                <ul class="home-menu--dog">
-                    <div class="home-toggle--dog"><ion-icon name="add-outline"></ion-icon></div>
-                    <li style="--i:0;--clr:#d64e12;">
-                        <a href="./diseases-dog-diseases.html"><ion-icon name="fitness-outline"></ion-icon></a>
-                        <span class="tooltip--dog">Заболявания</span>
-                    </li>
-                    <li style="--i:1;--clr:#efdf48;">
-                        <a href="./health-care-dog-health-care.html"><ion-icon name="bandage-outline"></ion-icon></a>
-                        <span class="tooltip--dog">Здравни грижи</span>
-                    </li>
-                    <li style="--i:2;--clr:#8bd346;">
-                        <a href="./growth-dog-growth.html"><ion-icon name="trending-up-outline"></ion-icon></a>
-                        <span class="tooltip--dog">Растеж и развитие</span>
-                    </li>
-                    <li style="--i:3;--clr:#60dbe8;">
-                        <a href="./how-take-care-dog-how-take-care.html"><ion-icon name="hand-right-outline"></ion-icon></a>
-                        <span class="tooltip--dog">Как да се грижа?</span>
-                    </li>
-                    <li style="--i:4;--clr:#16a4d8;">
-                        <a href="./adjustment-dog-adjustment.html"><ion-icon name="home-outline"></ion-icon></a>
-                        <span class="tooltip--dog">Приспособяване в новия дом</span>
-                    </li>
-                    <li style="--i:5;--clr:#9b5fe0;">
-                        <a href="./what-for-you-dog-what-for-you.html"><ion-icon name="paw-outline"></ion-icon></a>
-                        <span class="tooltip--dog">Кое е за теб?</span>
-                    </li>
-                </ul>
-            </div>
+    <section id="article-review">
+        <div>
+    <a href="./diseases-dog-diseases.html"><button id="dog-btn-clicked">Куче</button></a> 
+    или 
+    <a href="./diseases-cat-diseases.html"><button id="cat-btn">Коте</button></a>
+</div>
+<ol>
+    <li><a href="./diseases-dog-top-diseases.html">ТОП 10 заболявания, заради които посещавате ветеринар</a></li>
+    <li><a href="./diseases-dog-top-symptoms.html">ТОП 10 оплаквания (симптоми), заради които посещавате ветеринар</a></li>
+    <li><a href="./diseases-dog-all-diseases.html">Всички заболявания при кучетата</a></li>
+    <li><a href="./diseases-dog-all-symptoms.html">Всички оплаквания (симптоми) при кучетата</a></li>
+</ol>
+    </section>
 
-            <div class="home--cat" id="home--cat-section">
-                <ul class="home-menu">
-                    <div class="home-toggle"><ion-icon name="add-outline"></ion-icon></div>
-                    <li style="--i:0;--clr:#9b5fe0;">
-                        <a href="./what-for-you-cat-what-for-you.html"><ion-icon name="paw-outline"></ion-icon></a>
-                        <span class="tooltip">Кое е за теб?</span>
-                    </li>
-                    <li style="--i:1;--clr:#16a4d8;">
-                        <a href="./adjustment-cat-adjustment.html"><ion-icon name="home-outline"></ion-icon></a>
-                        <span class="tooltip">Приспособяване в новия дом</span>
-                    </li>
-                    <li style="--i:2;--clr:#60dbe8;">
-                        <a href="./how-take-care-cat-how-take-care.html"><ion-icon name="hand-right-outline"></ion-icon></a>
-                        <span class="tooltip">Как да се грижа?</span>
-                    </li>
-                    <li style="--i:3;--clr:#8bd346;">
-                        <a href="./growth-cat-growth.html"><ion-icon name="trending-up-outline"></ion-icon></a>
-                        <span class="tooltip">Растеж и развитие</span>
-                    </li>
-                    <li style="--i:4;--clr:#efdf48;">
-                        <a href="./health-care-cat-health-care.html"><ion-icon name="bandage-outline"></ion-icon></a>
-                        <span class="tooltip">Здравни грижи</span>
-                    </li>
-                    <li style="--i:5;--clr:#d64e12;">
-                        <a href="./diseases-cat-diseases.html"><ion-icon name="fitness-outline"></ion-icon></a>
-                        <span class="tooltip">Заболявания</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <section id="main-content">
+        <div id="content" class="content">
+            <div id="overlay"></div>
 
-        <div id="arrow-pointing-down">
-            <img src="./img/index/arrow-point.gif" style="height: 100px; rotate: 180deg; filter: hue-rotate(-70deg);">
-        </div>
+            <div id="articleContent">
+                <div id="article-content--dogs">
+                    <h1>Луксация на колянното капаче</h1>
 
-        <h2 class="center-content">Актуални статии</h2>
-        <div class="current-articles">
-            <div class="current-article current-article-dog">
-                <a href="./health-care-dog-deworming.html" class="no-dec">
-                    <img src="./img/index/1.png">
-                    <div class="current-article-title">
-                        <h4>Обезпаразитяване</h4>
-                        <p>Бъди информиран за видовете обезпаразитяващи и избери най-доброто за твоето куче.</p>
-                    </div>
-                </a>
-
-            </div>
-
-            <div class="current-article current-article-dog">
-                <a href="./growth-dog-estrous-cycle.html" class="no-dec">
-                    <img src="./img/index/4.png">
-                    <div class="current-article-title">
-                        <h4>Полов цикъл</h4>
-                        <p>Научи как и кога твоето куче се разгонва.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="current-article current-article-cat">
-                <a href="./health-care-cat-deworming.html" class="no-dec">
-                    <img src="./img/index/3.png">
-                    <div class="current-article-title">
-                        <h4>Обезпаразитяване</h4>
-                        <p>Бъди информиран за видовете обезпаразитяващи и избери най-доброто за твоята котка.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="current-article current-article-cat">
-                <a href="./growth-cat-estrous-cycle.html" class="no-dec">
-                    <img src="./img/index/2.png">
-                    <div class="current-article-title">
-                        <h4>Полов цикъл</h4>
-                        <p>Научи как и кога твоята котка се разгонва.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="current-article">
-                <a href="./health-care-cat-which-vet.html" class="no-dec">
-                    <img src="./img/index/9.png">
-                    <div class="current-article-title">
-                        <h4>Избор на ветеринар</h4>
-                        <p>Виж как да избереш правилният за твоя любимец ветеринарен лекар.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="current-article current-article-dog">
-                <a href="./diseases-dog-canine-parvovirus-infection.html" class="no-dec">
-                    <img src="./img/index/5.png">
-                    <div class="current-article-title">
-                        <h4>Парвовироза</h4>
-                        <p>Виж и научи как да предпазиш кучето си от най-разпространеното и смъртоносно заболяване.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="current-article current-article-dog">
-                <a href="./what-for-you-are-you-ready-are-you-ready.html" class="no-dec">
-                    <img src="./img/index/7.png">
-                    <div class="current-article-title">
-                        <h4>Тест: Готов ли си за куче?</h4>
-                        <p>Разбери дали си готов да се грижиш за любимец</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="current-article current-article-cat">
-                <a href="./diseases-infectious-feline-panleukopenia.html" class="no-dec">
-                    <img src="./img/index/6.png">
-                    <div class="current-article-title">
-                        <h4>Панлевкопения</h4>
-                        <p>Прочети за една от най-смъртоносните инфекции по котките.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="current-article current-article-cat">
-                <a href="./what-for-you-are-you-ready-cat-are-you-ready.html" class="no-dec">
-                    <img src="./img/index/8.png">
-                    <div class="current-article-title">
-                        <h4>Тест: Готов ли си за котка?</h4>
-                        <p>Разбери дали си готов да се грижиш за любимец</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="current-article">
-                <a href="./diseases-ticks.html" class="no-dec">
-                    <img src="./img/index/5.png">
-                    <div class="current-article-title">
-                        <h4>Кърлежи</h4>
-                        <p>Виж как да предпазиш себе си и любимеца от кърлежите.</p>
-                    </div>
-                </a>
-            </div>
-            
-        </div>
-
-        <div class="todays-breed" id="todays-breed">
-            <div class="todays-breed-text">Породи за деня</div>
-            <div class="todays-breed-wrapper">
-
-                <div id="todaysDogBreed">
-                    <a href="">
-                        <div class="todays-breed-outside-box">
-                            <div class="todays-breed-box-dog"></div>
-                            <div class="todays-breed-name-dog">Каракачанска овчарка</div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div id="todaysCatBreed">
-                    <a href="">
-                        <div class="todays-breed-outside-box">
-                            <div class="todays-breed-box-cat"></div>
-                            <div class="todays-breed-name-cat">Руска синя котка</div>
-                        </div>
-                    </a>
-                </div>
-
-                
-            </div>
-
-            <div class="todays-article" id="todays-article">
-                <div class="todays-article-text">Статии за деня</div>
-                <div class="todays-article-wrapper">
-
-                    <div id="todaysDogArticle">
-                        <a href="" style="text-decoration: none;">
-                            <div class="todays-article-outside-box">
-                                <div class="fs48 fw900" style="color: var(--text-color-light)">КУЧЕ:</div>
-                                <div class="todays-article-name-dog"></div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div id="todaysCatArticle">
-                        <a href="" style="text-decoration: none;">
-                            <div class="todays-article-outside-box">
-                                <div class="fs48 fw900" style="color: var(--text-color-light)">КОТЕ:</div>
-                                <div class="todays-article-name-cat"></div>
-                            </div>
-                        </a>
-                    </div>
-
+                    <h2>Какво е луксация на колянното капаче и какво го причинява?</h2>
+                    <p>Луксацията на колянното капаче (ЛКК) е често срещано състояние при кучета, при което <strong>колянното капаче</strong> (пателата) <strong>излиза от нормалното си положение</strong> в ямката на бедрената кост. Това изместване се случва към <strong>вътрешната</strong> (медиална) <strong>част</strong> или към <strong>външната (латерална) част </strong><strong>на крака</strong>. Луксацията може да бъде от лека до тежка и може да засегне едното или двете колена.</p>
+                    <p>ЛКК обикновено се причинява от вродени (наследствени) структурни аномалии, което означава, че <strong>някои кучета се раждат с анатомична предразположеност</strong> към това състояние. По-рядко може да се развие в резултат на травма, като например нараняване, което уврежда колянната става.</p>
                     
+                    <h2>Кои кучета са най-застрашени?</h2>
+                    <p>ЛКК е по-често срещано при <strong>дребни и миниатюрни породи кучета</strong>, включително:</p>
+                    <ul>
+                    <li>Чихуахуа</li>
+                    <li>Померан</li>
+                    <li>Йоркширски териер</li>
+                    <li>Пудел</li>
+                    <li>Малтийска болонка</li>
+                    <li>Пекинез</li>
+                    </ul>
+                    <p>Въпреки това, ЛКК може да се развие и при големи породи кучета, особено ако имат анормална структура на крайниците.</p>
+                    
+                    <h2>Как кучетата развиват луксация на колянното капаче?</h2>
+                    <p>ЛКК обикновено е резултат от <strong>генетични фактори</strong>, които водят до неправилно подравняване на костите на задния крак. Ако бедрената кост (фемур) и големият пищял (тибия) не са подравнени правилно, пателата не може да остане на мястото си, което я прави по-лесно измествана от нормалната си позиция.</p>
+                    <p>С времето, повтарящата се луксация на капачето може да причини <strong>увреждане на ставата</strong>, което води до <strong>артрит и болка</strong>. В някои случаи мускулен дисбаланс или слабост на лигаментите също могат да допринесат за проблема.</p>
+                    
+                    <h2>Как луксацията на колянното капаче влияе на кучето?</h2>
+                    <p>Когато капачето се луксира, това влияе върху способността на кучето да ходи нормално. Степента на въздействие <strong>зависи от тежестта на състоянието</strong>:</p>
+                    <ul>
+                    <li><strong>Леки случаи</strong>: Капачето се измества от време на време и може да се върне в нормалното си положение без намеса.</li>
+                    <li><strong>Умерени случаи</strong>: Капачето често се измества, причинявайки дискомфорт и засягайки движението.</li>
+                    <li><strong>Тежки случаи</strong>: Капачето остава луксирано през повечето време, което води до хронична болка, накуцване и прогресивно увреждане на ставата.</li>
+                    </ul>
+                    <p>Дългосрочните ефекти на ЛКК включват артрит, намалена подвижност и повишен риск от разкъсване на краниалния кръстосан лигамент (CCL), който е основен лигамент в коляното.</p>
+                    
+                    <h2>Какви са симптомите на луксация на колянното капаче?</h2>
+                    <p>Симптомите зависят от тежестта на състоянието и могат да включват:</p>
+                    <ul>
+                    <li>Внезапно подскачане или накуцване на един крак при ходене или бягане</li>
+                    <li>Леко или тежко накуцване</li>
+                    <li>Скованост в задните крака</li>
+                    <li>Нежелание за физическа активност или скачане</li>
+                    <li>Изкривена стойка на краката при тежки случаи</li>
+                    </ul>
+                    <p>При леки случаи кучетата може да не показват явни симптоми и състоянието може да бъде открито само при ветеринарен преглед.</p>
+                    
+                    <h2>Как се диагностицира луксация на колянното капаче?</h2>
+                    <p>Ветеринарният лекар диагностицира ЛКК чрез:</p>
+                    <ol>
+                    <li><strong>Клиничен преглед</strong> – Лекарят чрез докосване проверява стабилността на капачето и определя степента на луксация от <strong>степен 1 (лека) до </strong><strong>степен 4 (тежка)</strong>.</li>
+                    <li><strong>Рентгенови снимки</strong> – Използват се за оценка на костната структура и изключване на други ставни проблеми.</li>
+                    </ol>
+                    
+                    <h2>Как се лекува луксация на колянното капаче?</h2>
+                    <p>Лечението зависи от тежестта на състоянието:</p>
+                    <p><strong>Консервативно лечение (за леки случаи):</strong></p>
+                    <ul>
+                    <li><strong>Контрол на теглото</strong> – Поддържането на здравословно тегло намалява натоварването върху ставите.</li>
+                    <li><strong>Добавки за стави</strong> – Добавките глюкозамин и хондроитин могат да подпомогнат здравето на ставите.</li>
+                    <li><strong>Физиотерапия</strong> – Упражнения за укрепване на мускулите, които стабилизират коляното.</li>
+                    <li><strong>Обезболяващи средства</strong> – Противовъзпалителни лекарства могат да намалят дискомфорта.</li>
+                    </ul>
+                    <p><strong>Хирургично лечение (за умерени до тежки случаи):</strong></p>
+                    <ul>
+                    <li><strong>Хирургична корекция</strong> се препоръчва за кучета с тежка луксация. Процедурата може да включва:</li>
+                    <ul>
+                    <li>Задълбочаване на феморалния жлеб, за да се задържи капачето на мястото му.</li>
+                    <li>Корекция на меките тъкани за подобряване на подравняването на коляното.</li>
+                    <li>Коригиране на костни деформации, ако е необходимо.</li>
+                    </ul>
+                    </ul>
+                    <p>Хирургията има висок процент на успех и повечето кучета се възстановяват добре с подходяща рехабилитация.</p>
+                    
+                    <h2>Как да предотвратим луксация на колянното капаче?</h2>
+                    <p>Въпреки че ЛКК не може винаги да бъде предотвратено, рискът може да бъде намален чрез:</p>
+                    <ul>
+                    <li>Избор на отговорен развъдчик, който проверява за генетични ортопедични проблеми.</li>
+                    <li>Поддържане на здравословно тегло за намаляване на натоварването върху ставите.</li>
+                    <li>Редовни упражнения за укрепване на мускулите и подкрепа на ставите.</li>
+                    <li>Избягване на прекомерно скачане върху твърди повърхности, особено при малки породи.</li>
+                    </ul>
+                    
+                    <h2>Какво да направите, ако подозирате луксация на колянното капаче?</h2>
+                    <p>Ако забележите признаци на ЛКК, запишете час за ветеринарен преглед възможно най-скоро. Ранната диагноза и лечение могат да помогнат за предотвратяване на влошаване на ставните увреждания и да подобрят комфорта и мобилността на вашето куче.</p>
+
+                    <br>
+
                 </div>
             </div>
-        </div>
 
-
-
-        <!-- SHARE -->
-        <div id="share-with-others">
+            <!-- SHARE -->
+            <div id="share-with-others">
     <div class="share-with-others-text">Помогни на повече стопани да се грижат правилно за своите мили любимци:</div>
     <div class="share-panel">
         <div id="postFacebookBtn" class="share-box">
@@ -896,9 +762,11 @@
     </div>
     <img src="./img/share-baner.png" style="height: 110px;">
 </div>
-        
-    </div>
+
+        </div>
+    </section>
 </section>
+
 
 <!-- FOOTER -->
         <footer class="footer">
