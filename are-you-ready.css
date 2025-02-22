@@ -1,4 +1,4 @@
-<html><head></head><body>.hide {
+.hide {
     display: none;
 }
 
@@ -58,11 +58,6 @@
     color: white;
     transition: .2s;
 }
-
-
-
-
-
 
 .tool-progress {
     display: none;
@@ -693,4 +688,3 @@
 
 
 
-</body></html>

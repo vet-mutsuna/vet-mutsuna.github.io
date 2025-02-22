@@ -1,4 +1,4 @@
-<html><head></head><body>const questionsCollection = [
+const questionsCollection = [
     'Преди да донесеш кучето си вкъщи, подготвил ли си всичко нужно?', 
     'Когато вземеш кучето вкъщи, какво ще направиш?', 
     'Обезопаси ли твоя дом за кучето?', 
@@ -61,7 +61,7 @@ let animationDelay  = 0;
 let correctCount    = 0;
 
 // Generate the li elements
-for (let i = 0; i &lt; numQuestions; i++) {
+for (let i = 0; i < numQuestions; i++) {
     const li = document.createElement("li");
     li.setAttribute("data-step", i);
     li.setAttribute("data-increment", (i * (94 / (numQuestions - 1))).toFixed(2));
@@ -72,7 +72,7 @@ for (let i = 0; i &lt; numQuestions; i++) {
     toolProgressUl.appendChild(li);
 }
 
-setTimeout(() =&gt; {
+setTimeout(() => {
     toolProgressUl.style.width = "94%";
 }, 100 * (numQuestions - 1)); // Adjust the delay based on the number of questions
 
@@ -84,7 +84,7 @@ const liElements = toolProgressUl.querySelectorAll("li");
 liElements[currentStep].classList.add("active");
 
 function calculateCorrectAnswers(answerCheckboxCollection) {
-    return answerCheckboxCollection.every(answerState =&gt; answerState === 'Y') ? 1 : 0;
+    return answerCheckboxCollection.every(answerState => answerState === 'Y') ? 1 : 0;
 }
 
 function calculateTestResult(answerState) {
@@ -96,18 +96,18 @@ function calculateTestResult(answerState) {
         if(correctCount == 20) {
             yourResultText.innerHTML = `
             <div>Готов си за куче</div>
-            <p>Браво! Нямаш грешки в отговорите си! Ако все още не си избрал порода, може да използваш <a href="../breeds-dog-breed-selector.html">Селектора на кучешки проди</a>.</p>
+            <p>Браво! Нямаш грешки в отговорите си! Ако все още не си избрал порода, може да използваш <a href="../breeds/dog-breed-selector.html">Селектора на кучешки проди</a>.</p>
                                 `;
         }
 
-        if(correctCount &gt;= 10) {
+        if(correctCount >= 10) {
             yourResultText.innerHTML = `
             <div>Почти си там</div>
             <p>Преди да си вземеш куче, има няколко неща, които трябва да направиш. Виж по-долните линкове от националния зоопортал (mutsuna.org), за да може да осигуриш оптимални грижи на твоя бъдещ любимец.</p>
                                 `;
         }
 
-        if(correctCount &lt; 10) {
+        if(correctCount < 10) {
             yourResultText.innerHTML = `
             <div>Имаш още работа преди да си вземеш куче</div>
             <p>Повечето от въпросите не са верни, но затова е и създаден този национален зоопортал (mutsuna.org) – за да може собствениците на животни да осигурят оптимални грижи на техните любимци.</p>
@@ -130,12 +130,12 @@ function animateEffect(element, startTranslateY, startOpacity, endTranslateY, en
         element.style.transform = `translateY(${translateY}px)`;
         element.style.opacity = opacity;
 
-        if (progress &lt; 1) {
+        if (progress < 1) {
             requestAnimationFrame(updateAnimation);
         }
     }
 
-    setTimeout(() =&gt; {
+    setTimeout(() => {
         requestAnimationFrame(updateAnimation);
     }, delay);
 }
@@ -143,7 +143,7 @@ function animateEffect(element, startTranslateY, startOpacity, endTranslateY, en
 
 function animateOnlyOneElement(element) {
     animateEffect(element, 0, 0, -10, 0.5, 200);
-    setTimeout(() =&gt; {
+    setTimeout(() => {
         animateEffect(element, -10, 0.5, 0, 1, 200); 
     }, 200); 
     // animationDelay += 200;
@@ -160,19 +160,19 @@ function startQuiz() {
     
         const firstStepHeading = steps[0].querySelector(".step h4");
 
-        liElements.forEach((li) =&gt; {
+        liElements.forEach((li) => {
             let i = 0;
             // Use a timeout to change opacity after a slight delay
-            setTimeout(() =&gt; {
+            setTimeout(() => {
                 li.style.opacity = "1";
             }, 100 * i);
             i++
         });
 
-        steps.forEach((step, index) =&gt; {
+        steps.forEach((step, index) => {
             const filters = step.querySelectorAll(".filter");
-            filters.forEach(filter =&gt; {
-                filter.addEventListener('click', () =&gt; {
+            filters.forEach(filter => {
+                filter.addEventListener('click', () => {
                     showAnswer(step, index);
                 }
                 );
@@ -182,15 +182,15 @@ function startQuiz() {
         });
 
         const filtersFirstQuestion = steps[0].querySelectorAll(".filter");
-        filtersFirstQuestion.forEach((filter) =&gt; {
+        filtersFirstQuestion.forEach((filter) => {
             
             animateEffect(filter, 0, 0, -10, 0.5, 200, animationDelay); // Start translateY(0), opacity(0); End translateY(-10), opacity(0.5)
-            setTimeout(() =&gt; {
+            setTimeout(() => {
                 animateEffect(filter, -10, 0.5, 0, 1, 200); // Start translateY(-10), opacity(0.5); End translateY(0), opacity(1)
             }, 200 + animationDelay); // Wait 300ms after the first animation before starting the second animation
             animationDelay += 200; // Add a delay of 100ms between each element
             
-            filter.addEventListener('click', () =&gt; {
+            filter.addEventListener('click', () => {
                 
                 const answerState = filter.getAttribute('truthfulness');
                 answerSheetCollection.push(answerState);
@@ -214,7 +214,7 @@ function startQuiz() {
         
 
         animateEffect(firstStepHeading, 0, 0, -10, 0.5, 200);
-        setTimeout(() =&gt; {
+        setTimeout(() => {
             animateEffect(firstStepHeading, -10, 0.5, 0, 1, 200); 
         }); 
     }
@@ -230,7 +230,7 @@ function showAnswer(step, index) {
         answerDiv.style.display = 'block';
     
         const filters = step.querySelectorAll(".filter");
-        filters.forEach(filter =&gt; {
+        filters.forEach(filter => {
             filter.style.display = 'none';
         });
     
@@ -238,7 +238,7 @@ function showAnswer(step, index) {
         animateOnlyOneElement(answerHeading);
 
         if(nextBtn) {
-            nextBtn.addEventListener('click', () =&gt; showNextQuestion(step, index));
+            nextBtn.addEventListener('click', () => showNextQuestion(step, index));
             animateOnlyOneElement(nextBtn);
         }
         
@@ -279,15 +279,15 @@ function showNextQuestion(step, index) {
             animateOnlyOneElement(stepHeading);
             
             const filtersNextStep = nextStep.querySelectorAll(".filter");
-            filtersNextStep.forEach((filter) =&gt; {
+            filtersNextStep.forEach((filter) => {
                 
                 animateEffect(filter, 0, 0, -10, 0.5, 200, animationDelayNextStep); // Start translateY(0), opacity(0); End translateY(-10), opacity(0.5)
-                setTimeout(() =&gt; {
+                setTimeout(() => {
                     animateEffect(filter, -10, 0.5, 0, 1, 200); // Start translateY(-10), opacity(0.5); End translateY(0), opacity(1)
                 }, 200 + animationDelayNextStep); // Wait 300ms after the first animation before starting the second animation
                 animationDelayNextStep += 200; // Add a delay of 100ms between each element
 
-                filter.addEventListener("click", () =&gt; {
+                filter.addEventListener("click", () => {
                     const answerState = filter.getAttribute('truthfulness');
                     answerSheetCollection.push(answerState);
                     const classId = answerState === 'Y' ? 'correct' : 'wrong';
@@ -316,18 +316,18 @@ function showNextQuestion(step, index) {
                     const checkboxes = nextStep.querySelectorAll(".checkbox-container");
                     let animationDelayCheckboxes = 0;
 
-                    checkboxes.forEach (checkbox =&gt; {
-                        checkbox.addEventListener('click', () =&gt; { 
+                    checkboxes.forEach (checkbox => {
+                        checkbox.addEventListener('click', () => { 
                             nextShowAnsBtn.style.display = 'block';
                             });
                         });
                     
-                    nextShowAnsBtn.addEventListener('click', () =&gt; {
+                    nextShowAnsBtn.addEventListener('click', () => {
                         showAnswer(nextStep, nextStepNumber);
 
                         const checkboxes = nextStep.querySelectorAll(".checkbox-container");
-                        const checkedCheckboxes = Array.from(checkboxes).filter(checkbox =&gt; checkbox.querySelector("input").checked);
-                        const answerCheckboxCollection = checkedCheckboxes.map(checkbox =&gt; checkbox.getAttribute('truthfulness'));
+                        const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.querySelector("input").checked);
+                        const answerCheckboxCollection = checkedCheckboxes.map(checkbox => checkbox.getAttribute('truthfulness'));
                         
                         const numCorrectAnswersCheckbox = calculateCorrectAnswers(answerCheckboxCollection);
                         const classId = numCorrectAnswersCheckbox === 1 ? 'correct' : 'wrong';
@@ -352,9 +352,9 @@ function showNextQuestion(step, index) {
                     });
 
                     const checkboxesNextStep = nextStep.querySelectorAll(".checkbox-container");
-                    checkboxesNextStep.forEach((checkbox) =&gt; {
+                    checkboxesNextStep.forEach((checkbox) => {
                         animateEffect(checkbox, 0, 0, -10, 0.5, 200, animationDelayCheckboxes); // Start translateY(0), opacity(0); End translateY(-10), opacity(0.5)
-                        setTimeout(() =&gt; {
+                        setTimeout(() => {
                             animateEffect(checkbox, -10, 0.5, 0, 1, 200); // Start translateY(-10), opacity(0.5); End translateY(0), opacity(1)
                         }, 200 + animationDelayCheckboxes); // Wait 300ms after the first animation before starting the second animation
                         animationDelayCheckboxes += 200; // Add a delay of 100ms between each element
@@ -368,4 +368,4 @@ function showNextQuestion(step, index) {
         } else {
 
         }
-    }</body></html>
+    }
