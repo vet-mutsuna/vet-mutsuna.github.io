@@ -61,10 +61,8 @@ const loadState = () => {
 
 darkModeBtn.addEventListener('click', () => {
 
-
     toggleDarkMode();
 
- 
     darkModeIcon.classList.add('animated');
     loadState();
 
