@@ -3,7 +3,7 @@ const replaceHrefModule = require("./replace_hrefs");
 
 const SOURCE_DIR        = "./src";
 const BUILD_DIR         = "./build";
-const INCLUDE_REGEX     = /<include\s+what="[^"]*"(?:\s+var:[a-zA-Z0-9_]+="[^"]*")*\s*><\/include>/g;
+const INCLUDE_REGEX     = /<include\s+what="[^"]*"(?:\s+var:[a-zA-Z0-9_]+="[^"]*")*\s*>([\s\S]*?)<\/include>/g;
 
 const convertToFileName = (path) => {
 
@@ -12,6 +12,30 @@ const convertToFileName = (path) => {
     collection.shift();
     return collection.join("-");
 }
+
+/**
+ * @author Mihail Petrov
+ * @param {*} htmlString 
+ */
+const parseChildContent = (htmlString) => {
+
+    const varRegex      = /<include\b[^>]*>([\s\S]*?)<\/include>/g;
+    let varCollection   = {};
+    let match;
+
+
+    // console.log(varRegex.exec(htmlString)[1]);
+
+    // while ((match = varRegex.exec(htmlString)) !== null) {
+
+    //     console.log(match);
+    //     console.log("####");
+
+    //     return match;
+    // }
+
+    return varRegex.exec(htmlString)[1];
+};
 
 /**
  * @author Mihail Petrov
@@ -68,10 +92,19 @@ const traverseDirectories = (basePath) => {
 
         content     = content.replace(INCLUDE_REGEX, (match, includePath) => {
 
+            
+            const childContent       = parseChildContent(match);
             const variableCollection = parseIncludeVars(match);
             const locationCollection = parseWhatLocation(match);
             const location           = locationCollection['what'];
 
+            // console.log(match);
+            // if(basePath == './src/adjustment/dog/first-days.html') {
+
+            //     const childContent       = parseChildContent(match);
+            //     console.log(childContent);
+            // }
+            
             // get data from (WHAT)
             // **
             // **
@@ -82,7 +115,7 @@ const traverseDirectories = (basePath) => {
                 templateHTML    = templateHTML.replace(regex, variableCollection[variableId]);
             }
 
-            return templateHTML;
+            return templateHTML.replace(/{{{@child}}}/g, childContent);
         });
 
         fs.writeFileSync(`${BUILD_DIR}/${convertToFileName(basePath)}`, content, "utf8");
