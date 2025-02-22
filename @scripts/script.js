@@ -1,129 +1,27 @@
 //Get current year for Mutsuna:
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
-  // DARK MODE
- let darkMode         = localStorage.getItem("darkMode");
- let darkenLogo       = localStorage.getItem("darkenLogo");
- const darkModeToggle = document.querySelector("#dark-mode-toggle");
- let siteUrlImg       = document.querySelector("#site-url-img");
- 
-// проверяваме дали ДаркМоде е вкл
-// ако е вкл -> изключваме
-// ако е изкл -> включваме
 
-const enableDarkMode = () => {
-  // add the class DarkMode to the body
-  document.body.classList.add("darkMode");
-  siteUrlImg.classList.add("darkenLogo");
-  // update darkMode  in the LocalStorage
-  localStorage.setItem("darkMode", "enabled");
-}
+// OPEN MENU WITH BURGER
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileBurger = document.querySelector('.mobile-burger');
+  const mobileNavigation = document.getElementById('mobile-navigation');
+  const overlay = document.getElementById('overlay');
 
-const disableDarkMode = () => {
-  // 1. add the class DarkMode to the body
-  document.body.classList.remove("darkMode");
-  siteUrlImg.classList.remove("darkenLogo");
-  // 2. update darkMode  in the LocalStorage
-  localStorage.setItem("darkMode", null);
-}
+  // console.log('mobileBurger:', mobileBurger);
+  // console.log('mobileNavigation:', mobileNavigation);
+  // console.log('overlay:', overlay);
 
-if (darkMode === "enabled") {
-  enableDarkMode();
-}
-
- darkModeToggle.addEventListener("click", () => {
-    darkMode = localStorage.getItem("darkMode");
-    darkenLogo = localStorage.getItem("darkenLogo");
-
-    if (darkMode!== "enabled") {
-      enableDarkMode();
-      console.log(darkMode);
-    }
-    else {
-      disableDarkMode();
-      console.log(darkMode);
-    }
- });
-
-
-
-// DARK MODE BUTTON
-
-const body = document.querySelector('body');
-const darkModeBtn = document.querySelector('.dark-mode-btn');
-const darkModeIcon = document.querySelector('.dark-mode--icon');
-
-//to save the dark mode use the object "local storage".
-
-//function that stores the value true if the dark mode is activated or false if it's not.
-function store(value){
-  localStorage.setItem('darkmode', value);
-}
-
-//function that indicates if the "darkmode" property exists. It loads the page as we had left it.
-function load(){
-  const darkmode = localStorage.getItem('darkmode');
-
-  //if the dark mode was never activated
-  if(!darkmode){
-    store(true);
-    darkModeIcon.classList.add('fa-sun');
-  } else if( darkmode == 'false'){ //if the dark mode is activated
-    body.classList.add('darkmode');
-    darkModeIcon.classList.add('fa-moon');
-  } else if(darkmode == 'true'){ //if the dark mode exists but is disabled
-    darkModeIcon.classList.add('fa-sun');
-  }
-}
-
-
-load();
-
-darkModeBtn.addEventListener('click', () => {
-
-  body.classList.toggle('darkmode');
-  darkModeIcon.classList.add('animated');
-
-  //save true or false
-  store(body.classList.contains('darkmode'));
-
-  if(body.classList.contains('darkmode')){
-    darkModeIcon.classList.remove('fa-sun');
-    darkModeIcon.classList.add('fa-moon');
-  }else{
-    darkModeIcon.classList.remove('fa-moon');
-    darkModeIcon.classList.add('fa-sun');
+  function toggleMobileNavigation() {
+    const isMenuVisible = window.getComputedStyle(mobileNavigation).display === 'block';
+    mobileNavigation.style.display = isMenuVisible ? 'none' : 'block';
+    overlay.style.display = isMenuVisible ? 'none' : 'block'; // Show/hide the overlay
   }
 
-  setTimeout( () => {
-    darkModeIcon.classList.remove('animated');
-  }, 500)
-})
-
-
-
-
-
-  // OPEN MENU WITH BURGER
-  document.addEventListener('DOMContentLoaded', function () {
-    const mobileBurger = document.querySelector('.mobile-burger');
-    const mobileNavigation = document.getElementById('mobile-navigation');
-    const overlay = document.getElementById('overlay');
-  
-    // console.log('mobileBurger:', mobileBurger);
-    // console.log('mobileNavigation:', mobileNavigation);
-    // console.log('overlay:', overlay);
-  
-    function toggleMobileNavigation() {
-      const isMenuVisible = window.getComputedStyle(mobileNavigation).display === 'block';
-      mobileNavigation.style.display = isMenuVisible ? 'none' : 'block';
-      overlay.style.display = isMenuVisible ? 'none' : 'block'; // Show/hide the overlay
-    }
-  
-    mobileBurger.addEventListener('click', () => {
-      toggleMobileNavigation();
-    });
+  mobileBurger.addEventListener('click', () => {
+    toggleMobileNavigation();
   });
+});
   
 
 // OPEN MENU DESKTOP OVERLAY
@@ -148,9 +46,9 @@ headerNavigationItems.forEach(item => {
 
 // ARROW ICON MENU CAT AND SLOW DROP MENU
 // Get references to the button and navigation menu
-const buttonCats = document.getElementById('buttonCats');
-const navigationCats = document.getElementById('mobile-navigation--cats');
-const arrowIcon = document.querySelector('.arrow-icon');
+const buttonCats      = document.getElementById('buttonCats');
+const navigationCats  = document.getElementById('mobile-navigation--cats');
+const arrowIcon       = document.querySelector('.arrow-icon');
 
 // Function to toggle the navigation menu and arrow icon
 function toggleNavigationMenu() {
@@ -280,8 +178,9 @@ function blurImage(element) {
 
 // EMAIL
 function sendByEmail() {
+
   const subject = "Сайт за по-добра грижа към домашните ни любимци"; 
-  const body = "Здравей, този сайт цели да помогне на стопаните да се грижат по-добре за своите мили любимци - mutsuna.org. Посети го!";
+  const body    = "Здравей, този сайт цели да помогне на стопаните да се грижат по-добре за своите мили любимци - mutsuna.org. Посети го!";
 
   const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoLink;
@@ -293,6 +192,7 @@ function printContent() {
 }
 
 function addPrintPageBreaks() {
+
   const elements = document.getElementsByClassName('print-page-break');
   for (const element of elements) {
     const wrapper = document.createElement('div');
