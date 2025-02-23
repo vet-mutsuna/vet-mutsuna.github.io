@@ -133,6 +133,11 @@
 }
 
 
+.is-selected {
+    color       : #249ea1;
+    font-weight : bold;
+}
+
 /* -------------- BUTTON -------------- */
 .dark-mode-btn {
 

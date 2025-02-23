@@ -1,3 +1,19 @@
+const path              = '.' + window.location.pathname;
+const dataCollection    = document.querySelectorAll('[data-href]');
+
+for(const element of dataCollection) {
+
+  console.log(element);
+
+    const href = element.getAttribute('data-href');
+    if(href == path) {
+        element.classList.add('is-selected')
+    }
+}
+
+
+
+
 //Get current year for Mutsuna:
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
