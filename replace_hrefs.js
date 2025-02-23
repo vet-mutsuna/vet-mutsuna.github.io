@@ -28,10 +28,8 @@ exports.replaceHref = (inputFile) => {
         // Write the modified HTML back to a file
         fs.writeFile(inputFile, $.html(), 'utf8', (err) => {
             if (err) {
-               // console.error('Error writing the file:', err);
                 return;
             }
-            // console.log('File successfully updated:', inputFile);
         });
     });
 }
