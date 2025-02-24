@@ -46,7 +46,8 @@ const loadState = () => {
         body.classList.add('darkmode');
         body.classList.add('darkMode');
         darkModeIcon.classList.remove('fa-sun');
-        darkModeIcon.classList.add('fa-moon');        
+        darkModeIcon.classList.add('fa-moon');
+        siteUrlImg.classList.add("darkenLogo");        
     }
 
     if(isInLightMode()) {
@@ -54,7 +55,8 @@ const loadState = () => {
         body.classList.remove('darkmode');
         body.classList.remove('darkMode');
         darkModeIcon.classList.remove('fa-moon')
-        darkModeIcon.classList.add('fa-sun');        
+        darkModeIcon.classList.add('fa-sun');
+        siteUrlImg.classList.remove("darkenLogo");
     }
 }
 
