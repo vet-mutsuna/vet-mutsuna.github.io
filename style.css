@@ -481,7 +481,7 @@ width: 0%;
     position        : relative;
     z-index         : 0;
     flex-direction  : row;
-    padding         : 0px 18px;
+    padding         : 0px 18px !important;
     background      : var(--background-color);
 }
 
@@ -1419,7 +1419,7 @@ h2 {
         display: flex;
         flex-direction: column;
         z-index: 0;
-        padding: 0px 18px;
+        padding: 0px 18px !important;
         background-color: var(--background-color-content-mobile);
     }
 
@@ -1468,12 +1468,6 @@ h2 {
     #article-content--cats, #article-content--dogs {
         padding: 0px;
     }
-
-    
-    .imgs-holder {
-        display: block;
-     }
-
 
     .img-holder img {
         width: 100%;
@@ -1561,6 +1555,13 @@ h2 {
 
 .only-for-print {
     display: none;
+}
+
+@media (max-width:1500px) {
+    
+    .imgs-holder {
+        display: block;
+     }
 }
 
 @media print {
