@@ -106,7 +106,7 @@
     height: 446px;
     padding: 89px 0px 0px 167px;
     margin-bottom: 50px;
-    background-image: url(./img/home/cat-play.png);
+    background-image: url(../@img/home/cat-play.png);
     background-repeat: no-repeat;
     padding-top: 204px;
     padding-left: 4px;
@@ -239,7 +239,7 @@
     width: 343px;
     height: 446px;
     margin-bottom: 50px;
-    background-image: url(./img/home/dog-sit.png);
+    background-image: url(../@img/home/dog-sit.png);
     background-repeat: no-repeat;
     padding-top: 207px;
     padding-left: 166px;

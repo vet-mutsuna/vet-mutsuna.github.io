@@ -109,7 +109,7 @@
     }
 
     .current-article, .animal-new {
-      width: 100%;
+      /* width: 100%; */
       margin: 0;
       padding: 10px;
       display: flex;
@@ -133,7 +133,7 @@
     }
 
     .current-article-title, .animal-new-title {
-      height: 100%;
+      height: auto;
       background-color: transparent;
       padding: 0;
       padding-top: 10px;
