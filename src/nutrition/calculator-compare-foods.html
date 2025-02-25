@@ -5,22 +5,8 @@
     <section id="content-section">
 
         <section id="article-review">
-            <div>
-                <div class="choose-message">Избери вид любимец</div>
-                <a href="../how-take-care/dog/how-take-care.html"><button id="dog-btn">Куче</button></a> 
-                или 
-                <a href="../how-take-care/cat/how-take-care.html"><button id="cat-btn">Коте</button></a>
-            </div>
-            <ol>
-                <li>Как общуват кучетата/ котките</li>
-                <li>Режим на сън</li>
-                <li>Обучение за ходене на тоалетна</li>
-                <li>Грижа за козина</li>
-                <li>Грижа за нокти</li>
-                <li>Профилактичен преглед</li>
-                <!-- <li>Сравни цените между видовете храни (калкулатор)</li> -->
-            </ol>
-        </section>
+            <include what="@@components/how-take-care-cat.html"></include>
+        </section>    
 
         <section id="main-content">
             <div id="content" class="content">
@@ -124,4 +110,5 @@
 
 
 <!-- FOOTER -->
-<include what="@@layout/footer.html"></include>ss
+<include what="@@layout/footer.html"></include>
+<script src="./nutrition-calculator-compare-foods.js"></script>

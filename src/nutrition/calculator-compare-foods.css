@@ -1,5 +1,6 @@
 #calculator-compare {
     display: flex;
+    flex-direction: row;
 }
 
 #food-one {

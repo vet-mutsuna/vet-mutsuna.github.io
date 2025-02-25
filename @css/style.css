@@ -551,7 +551,7 @@ width: 0%;
 #main-content {
     width: calc(100% - 320px);
     float: right;
-    margin-top: 126.4px;
+    margin-top: 109px;
     margin-left: 320px;
         /* Add transition for smooth effect when the background color changes */
         transition: background-color 0.2s ease;

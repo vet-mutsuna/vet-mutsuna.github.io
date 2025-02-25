@@ -24,7 +24,7 @@ const currentCatArticles = [
         description : "Прочети за една от най-смъртоносните инфекции по котките."
     },
     {
-        link        : "./what-for-you/are-you-ready-cat/are-you-ready.html",
+        link        : "./what-for-you-are-you-ready-for-cat-are-you-ready.html",
         imgSrc      : "./img/index/8.png",
         title       : "Тест: Готов ли си за котка?",
         description : "Разбери дали си готов да се грижиш за любимец."
