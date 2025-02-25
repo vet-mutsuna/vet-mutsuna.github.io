@@ -3,344 +3,219 @@
 const articleCollection = [
     {
         name: "Анатомия на кучето",
-        url: "./what-for-you/dog/anatomy.html"},
+        url: "./what-for-you-dog-anatomy.html"},
     {
         name: "Природа на кучето",
-        url: "./what-for-you/dog/nature.html"},
+        url: "./what-for-you-dog-nature.html"},
     {
         name: "Продължителност на живота на кучето",
-        url: "./what-for-you/dog/life-expectancy.html"},
+        url: "./what-for-you-dog-life-expectancy.html"},
     {
         name: "Кратка история на кучето",
-        url: "./what-for-you/dog/brief-history.html"},
+        url: "./what-for-you-dog-brief-history.html"},
     {
-        name: "Предимствата да имаш куче",
-        url: "./what-for-you/dog/perks.html"},
+        name: "Предимствата да имаш куче</a>",
+        url: "./what-for-you-dog-perks.html"},
+    {
+        name: "Въпросник: Готов ли си за куче?",
+        url: "./what-for-you-are-you-ready-for-dog-are-you-ready.html"},
     {
         name: "Малко кученце или пораснало куче да взема",
-        url: "./what-for-you/dog/young-or-adult.html"},
+        url: "./what-for-you-dog-young-or-adult.html"},
     {
         name: "Мъжко или женско куче да взема",
-        url: "./what-for-you/dog/male-or-female.html"},
+        url: "./what-for-you-dog-male-or-female.html"},
     {
         name: "Откъде мога да се сдобия с куче?",
-        url: "./what-for-you/dog/where.html"},
+        url: "./what-for-you-dog-where.html"},
     {
         name: "Въпросник (Контролен списък) преди да си взема куче",
-        url: "./what-for-you/dog/before.html"},
+        url: "./what-for-you-dog-before.html"},
     {
-        name: "Подготовка на дома",
-        url: "./adjustment/dog/preparing.html"},
-    {
-        name: "Скритите отрови в дома",
-        url: "./adjustment/dog/poisons.html"},
-    {
-        name: "Първи дни на кучето у дома",
-        url: "./adjustment/dog/first-days.html"},
-    {
-        name: "Избор на име",
-        url: "./adjustment/dog/name.html"},
-    {
-        name: "Звукови сигнали и езика на тялото",
-        url: "./how-take-care/dog/language.html"},
+        name: "Как общуват кучетата",
+        url: "./how-take-care-dog-language.html"},
     {
         name: "Режим на сън",
-        url: "./how-take-care/dog/sleep.html"},
+        url: "./how-take-care-dog-sleep.html"},
     {
         name: "Обучение за ходене на тоалетна",
-        url: "./how-take-care/dog/toilet.html"},
+        url: "./how-take-care-dog-toilet.html"},
     {
         name: "Грижа за козина",
-        url: "./how-take-care/dog/fur.html"},
+        url: "./how-take-care-dog-fur.html"},
     {
         name: "Грижа за нокти",
-        url: "./how-take-care/dog/nails.html"},
+        url: "./how-take-care-dog-nails.html"},
     {
         name: "Профилактичен преглед",
-        url: "./how-take-care/dog/check-up.html"},
+        url: "./how-take-care-dog-check-up.html"},
+    {
+        name: "Сравни цените между видовете храни (калкулатор)",
+        url: "./nutrition-calculator-compare-foods.html"},
     {
         name: "Фази на растеж",
-        url: "./growth/dog/phases.html"},
+        url: "./growth-dog-phases.html"},
     {
         name: "Грижа за осиротели кученца",
-        url: "./growth/dog/orphan.html"},
+        url: "./growth-dog-orphan.html"},
     {
         name: "Мъжко или женско кученце имам?",
-        url: "./growth/dog/male-or-female.html"},
+        url: "./growth-dog-male-or-female.html"},
     {
         name: "Изчисляване на възрастта в кучешки години",
-        url: "./growth/dog/pet-years.html"},
+        url: "./growth-dog-pet-years.html"},
     {
         name: "Полов цикъл",
-        url: "./growth/dog/estrous-cycle.html"},
+        url: "./growth-dog-estrous-cycle.html"},
     {
         name: "Възпроизвеждане",
-        url: "./growth/dog/breeding.html"},
+        url: "./growth-dog-breeding.html"},
     {
         name: "Бременност",
-        url: "./growth/dog/pregnancy.html"},
+        url: "./growth-dog-pregnancy.html"},
     {
         name: "Раждане",
-        url: "./growth/dog/parturition.html"},
+        url: "./growth-dog-parturition.html"},
     {
         name: "Кастрация",
-        url: "./growth/dog/castration.html"},
+        url: "./growth-dog-castration.html"},
     {
         name: "Старост",
-        url: "./growth/dog/senility.html"},
+        url: "./growth-dog-senility.html"},
     {
-        name: "Избор на ветеринарен лекар",
-        url: "./health-care/dog/which-vet.html"},
+        name: "ТОП 10 заболявания, заради които посещавате ветеринар",
+        url: "./diseases-dog-top-diseases.html"},
     {
-        name: "Обезпаразитяване",
-        url: "./health-care/dog/deworming.html"},
+        name: "ТОП 10 оплаквания (симптоми), заради които посещавате ветеринар",
+        url: "./diseases-dog-top-symptoms.html"},
     {
-        name: "Ваксинации",
-        url: "./health-care/dog/vaccination.html"},
+        name: "Всички заболявания при котките",
+        url: "./diseases-dog-all-diseases.html"},
     {
-        name: "Чипиране",
-        url: "./health-care/dog/microchipping.html"},
+        name: "Всички оплаквания (симптоми) при котките",
+        url: "./diseases-dog-all-symptoms.html"},
     {
-        name: "Паспорт и документация",
-        url: "./health-care/dog/passport.html"},
+        name: "Подготовка на дома",
+        url: "./adjustment-dog-preparing.html"},
     {
-        name: "Преглед при ветеринарен лекар",
-        url: "./health-care/dog/vet-exam.html"},
+        name: "Скритите отрови в дома",
+        url: "./adjustment-dog-poisons.html"},
     {
-        name: "Аптечка и първа помощ",
-        url: "./health-care/dog/first-aid.html"},
+        name: "Първи дни на котката у дома",
+        url: "./adjustment-dog-first-days.html"},
     {
-        name: "Кърлеж върху любимеца ми",
-        url: "./health-care/dog/tick.html"},
-    {
-        name: "Даване на таблетки през устата",
-        url: "./health-care/dog/pills.html"},
-    {
-        name: "Кучешка парвовироза",
-        url: "./diseases/dog/canine-parvovirus-infection.html"},
-    {
-        name: "Кучешка коронавироза",
-        url: "./diseases/dog/canine-coronavirus-infection.html"},
-    {
-        name: "Гана",
-        url: "./diseases/dog/canine-distemper.html"},
-    {
-        name: "Ерлихиоза",
-        url: "./diseases/dog/ehrlichiosis.html"},
-    {
-        name: "Дирофилариоза",
-        url: "./diseases/dog/heartworm.html"},
+        name: "Избор на име",
+        url: "./adjustment-dog-name.html"},
+
 
 ]
 
 const articleCatCollection = [
     {
-        name: "Въпросник: Готов ли си за куче?",
-        url: "./what-for-you/are-you-ready/are-you-ready.html"},
-    {
-        name: "Въпросник: Какво куче да си взема?",
-        url: "./what-for-you/breeds/dog-breed-selector.html"},
-    {
-        name: "Библиотека с породи кучета",
-        url: "./what-for-you/breeds/dog-breeds.html"},
-    {
         name: "Анатомия на котката",
-        url: "./what-for-you/cat/anatomy.html"},
+        url: "./what-for-you-cat-anatomy.html"},
     {
         name: "Природа на котката",
-        url: "./what-for-you/cat/nature.html"},
+        url: "./what-for-you-cat-nature.html"},
     {
         name: "Продължителност на живота на котката",
-        url: "./what-for-you/cat/life-expectancy.html"},
+        url: "./what-for-you-cat-life-expectancy.html"},
     {
         name: "Кратка история на котката",
-        url: "./what-for-you/cat/brief-history.html"},
+        url: "./what-for-you-cat-brief-history.html"},
     {
         name: "Предимствата да имаш котка",
-        url: "./what-for-you/cat/perks.html"},
+        url: "./what-for-you-cat-perks.html"},
     {
         name: "Въпросник: Готов ли си за котка?",
-        url: "./what-for-you/are-you-ready-cat/are-you-ready.html"},
+        url: "./what-for-you-are-you-ready-for-cat-are-you-ready.html"},
     {
-        name: "Библиотека с породи котки",
-        url: "./what-for-you/breeds/cat-breeds.html"},
-    {
-        name: "Малко коте или пораснала котка да взема",
-        url: "./what-for-you/cat/young-or-adult.html"},
+        name: "Малко котенце или пораснала котка да взема",
+        url: "./what-for-you-cat-young-or-adult.html"},
     {
         name: "Мъжка или женска котка да взема",
-        url: "./what-for-you/cat/male-or-female.html"},
+        url: "./what-for-you-cat-male-or-female.html"},
     {
         name: "Откъде мога да се сдобия с котка?",
-        url: "./what-for-you/cat/where.html"},
+        url: "./what-for-you-cat-where.html"},
     {
         name: "Въпросник (Контролен списък) преди да си взема котка",
-        url: "./what-for-you/cat/before.html"},
-
-        
-
+        url: "./what-for-you-cat-before.html"},
     {
-        name: "Подготовка на дома",
-        url: "./adjustment/cat/preparing.html"},
-    {
-        name: "Скритите отрови в дома",
-        url: "./adjustment/cat/poisons.html"},
-    {
-        name: "Първи дни на котката у дома",
-        url: "./adjustment/cat/first-days.html"},
-    {
-        name: "Избор на име",
-        url: "./adjustment/cat/name.html"},
-
-        
-
-    {
-        name: "Сравни цените между видовете храни (калкулатор)",
-        url: "./nutrition/calculator-compare-foods.html"},
-    {
-        name: "Звукови сигнали и езика на тялото",
-        url: "./how-take-care/cat/language.html"},
+        name: "Как общуват котките",
+        url: "./how-take-care-cat-language.html"},
     {
         name: "Режим на сън",
-        url: "./how-take-care/cat/sleep.html"},
+        url: "./how-take-care-cat-sleep.html"},
     {
-        name: "Обучение за ходене на тоалетна",
-        url: "./how-take-care/cat/toilet.html"},
+        name: "Видове котешка тоалетна",
+        url: "./how-take-care-cat-toilet.html"},
     {
         name: "Грижа за козина",
-        url: "./how-take-care/cat/fur.html"},
+        url: "./how-take-care-cat-fur.html"},
     {
         name: "Грижа за нокти",
-        url: "./how-take-care/cat/nails.html"},
+        url: "./how-take-care-cat-nails.html"},
     {
         name: "Профилактичен преглед",
-        url: "./how-take-care/cat/check-up.html"},
+        url: "./how-take-care-cat-check-up.html"},
     {
         name: "Сравни цените между видовете храни (калкулатор)",
-        url: "./nutrition/calculator-compare-foods.html"},
-    
-    
-
+        url: "./nutrition-calculator-compare-foods.html"},
     {
         name: "Фази на растеж",
-        url: "./growth/cat/phases.html"},
+        url: "./growth-cat-phases.html"},
     {
-        name: "Грижа за осиротели котенца",
-        url: "./growth/cat/orphan.html"},
+        name: "Грижа за осиротели кученца",
+        url: "./growth-cat-orphan.html"},
     {
-        name: "Мъжко или женско котенце имам?",
-        url: "./growth/cat/male-or-female.html"},
+        name: "Мъжко или женско кученце имам?",
+        url: "./growth-cat-male-or-female.html"},
     {
         name: "Изчисляване на възрастта в котешки години",
-        url: "./growth/cat/pet-years.html"},
+        url: "./growth-cat-pet-years.html"},
     {
         name: "Полов цикъл",
-        url: "./growth/cat/estrous-cycle.html"},
+        url: "./growth-cat-estrous-cycle.html"},
     {
         name: "Възпроизвеждане",
-        url: "./growth/cat/breeding.html"},
+        url: "./growth-cat-breeding.html"},
     {
         name: "Бременност",
-        url: "./growth/cat/pregnancy.html"},
+        url: "./growth-cat-pregnancy.html"},
     {
         name: "Раждане",
-        url: "./growth/cat/parturition.html"},
+        url: "./growth-cat-parturition.html"},
     {
         name: "Кастрация",
-        url: "./growth/cat/castration.html"},
+        url: "./growth-cat-castration.html"},
     {
         name: "Старост",
-        url: "./growth/cat/senility.html"},
-
-
-
+        url: "./growth-cat-senility.html"},
     {
-        name: "Избор на ветеринарен лекар",
-        url: "./health-care/cat/which-vet.html"},
+        name: "ТОП 10 заболявания, заради които посещавате ветеринар",
+        url: "./diseases-cat-top-diseases.html"},
     {
-        name: "Обезпаразитяване",
-        url: "./health-care/cat/deworming.html"},
+        name: "ТОП 10 оплаквания (симптоми), заради които посещавате ветеринар",
+        url: "./diseases-cat-top-symptoms.html"},
     {
-        name: "Ваксинации",
-        url: "./health-care/cat/vaccination.html"},
+        name: "Всички заболявания при котките",
+        url: "./diseases-cat-all-diseases.html"},
     {
-        name: "Чипиране",
-        url: "./health-care/cat/microchipping.html"},
+        name: "Всички оплаквания (симптоми) при котките",
+        url: "./diseases-cat-all-symptoms.html"},
     {
-        name: "Паспорт и документация",
-        url: "./health-care/cat/passport.html"},
+        name: "Подготовка на дома",
+        url: "./adjustment-cat-preparing.html"},
     {
-        name: "Преглед при ветеринарен лекар",
-        url: "./health-care/cat/vet-exam.html"},
+        name: "Скритите отрови в дома",
+        url: "./adjustment-cat-poisons.html"},
     {
-        name: "Аптечка и първа помощ",
-        url: "./health-care/cat/first-aid.html"},
+        name: "Първи дни на котката у дома",
+        url: "./adjustment-cat-first-days.html"},
     {
-        name: "Кърлеж върху любимеца ми",
-        url: "./health-care/cat/tick.html"},
-    {
-        name: "Даване на таблетки през устата",
-        url: "./health-care/cat/pills.html"},
-
-
-
-    {
-        name: "Бълхи",
-        url: "./diseases/fleas.html"},
-    {
-        name: "Кърлежи",
-        url: "./diseases/ticks.html"},
-    {
-        name: "Цестодоза",
-        url: "./diseases/tapeworms.html"},
-    {
-        name: "Тумор на млечната жлеза",
-        url: "./diseases/mammary-gland-tumor.html"},
-    {
-        name: "Лимфома",
-        url: "./diseases/lymphoma.html"},
-    {
-        name: "Бяс",
-        url: "./diseases/rabies.html"},
-    {
-        name: "Панлевкопения",
-        url: "./diseases/cat/feline-panleukopenia.html"},
-    {
-        name: "Котешка коронавирусна инфекция",
-        url: "./diseases/cat/feline-coronavirus-infection.html"},
-    {
-        name: "Котешки инфекциозен перитонит",
-        url: "./diseases/cat/feline-infectious-peritonitis.html"},
-    {
-        name: "Котешка херпесвироза",
-        url: "./diseases/cat/feline-herpesvirus-infection.html"},
-    {
-        name: "Калицивироза",
-        url: "./diseases/cat/feline-calicivirus-infection.html"},
-    {
-        name: "Котешка левкемия",
-        url: "./diseases/cat/feline-leukemia-virus-infection.html"},
-    {
-        name: "Котешки имунодефицитен синдром",
-        url: "./diseases/cat/feline-immunodeficiency-virus.html"},
-    {
-        name: "Бълхи",
-        url: "./diseases/fleas.html"},
-    {
-        name: "Кърлежи",
-        url: "./diseases/ticks.html"},
-    {
-        name: "Цестодоза",
-        url: "./diseases/tapeworms.html"},
-    {
-        name: "Тумор на млечната жлеза",
-        url: "./diseases/mammary-gland-tumor.html"},
-    {
-        name: "Лимфома",
-        url: "./diseases/lymphoma.html"},
-    {
-        name: "Бяс",
-        url: "./diseases/rabies.html"}
+        name: "Избор на име",
+        url: "./adjustment-cat-name.html"},
 ]
 
 

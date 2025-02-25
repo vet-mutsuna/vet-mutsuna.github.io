@@ -3,11 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Муцуна | Сравни цените между видовете храни</title>
     <link rel="icon" href="./img/mutsuna-logo-round-nose-DARK.png">
+    <link rel="stylesheet" href="./nutrition-calculator-compare-foods.css">
     <link rel="stylesheet" href="./animations.css">
-    <link rel="stylesheet" href="./home-menu.css">
     <link rel="stylesheet" href="./rabies-validation-date.css">
-    <link rel="stylesheet" href="./current-articles.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home-menu.css">
+    <link rel="stylesheet" href="./current-articles.css">
 
 
     <link rel="stylesheet" href="./are-you-ready.css">
@@ -631,21 +632,53 @@
 
         <section id="article-review">
             <div>
-                <div class="choose-message">Избери вид любимец</div>
-                <a href="../how-take-care-dog-how-take-care.html"><button id="dog-btn">Куче</button></a> 
-                или 
-                <a href="../how-take-care-cat-how-take-care.html"><button id="cat-btn">Коте</button></a>
-            </div>
-            <ol>
-                <li>Как общуват кучетата/ котките</li>
-                <li>Режим на сън</li>
-                <li>Обучение за ходене на тоалетна</li>
-                <li>Грижа за козина</li>
-                <li>Грижа за нокти</li>
-                <li>Профилактичен преглед</li>
-                <!-- <li>Сравни цените между видовете храни (калкулатор)</li> -->
-            </ol>
-        </section>
+    <a href="./how-take-care-dog-how-take-care.html" style="text-decoration: none;">
+        <button id="dog-btn">Куче</button>
+    </a>
+    или 
+    <a href="./how-take-care-cat-how-take-care.html" style="text-decoration: none;">
+        <button id="cat-btn-clicked">Коте</button>
+    </a>
+</div>
+
+<ol>
+    <li>
+        <a data-href="./how-take-care-cat-language" href="./how-take-care-cat-language.html">
+            Как общуват котките
+        </a>
+    </li>
+    <li>
+        <a data-href="./how-take-care-cat-sleep" href="./how-take-care-cat-sleep.html">
+            Режим на сън
+        </a>
+    </li>
+    <li>
+        <a data-href="./how-take-care-cat-toilet" href="./how-take-care-cat-toilet.html">
+            Видове котешка тоалетна
+        </a>
+    </li>
+    <li>
+        <a data-href="./how-take-care-cat-fur" href="./how-take-care-cat-fur.html">
+            Грижа за козина
+        </a>
+    </li>
+    <li>
+        <a data-href="./how-take-care-cat-nails" href="./how-take-care-cat-nails.html">
+            Грижа за нокти
+        </a>
+    </li>
+    <li>
+        <a data-href="./how-take-care-cat-check-up" href="./how-take-care-cat-check-up.html">
+            Профилактичен преглед
+        </a>
+    </li>
+    <li>
+        <a data-href="./nutrition-calculator-compare-foods" href="./nutrition-calculator-compare-foods.html">
+            Сравни цените между видовете храни (калкулатор)
+        </a>
+    </li>
+</ol>
+        </section>    
 
         <section id="main-content">
             <div id="content" class="content">
@@ -853,7 +886,7 @@
         <script src="./breed.cat.collection.js"></script>
         <script src="./breed.library.js"></script>
 
-        <script src="./current-articles-dog.js"></script>
+        <!-- <script src="./current-articles-dog.js"></script> -->
         <script src="./todays-breed.js"></script>
         <script src="./todays-article.js"></script>
         <script src="./animations.js"></script>
@@ -866,4 +899,5 @@
 
         <script src="./are-you-ready.js"></script>
     
-ss</body></html>
+
+<script src="./nutrition-calculator-compare-foods.js"></script></body></html>

@@ -62,7 +62,7 @@
   }
 
   .current-article img, .animal-new img {
-    width: 100%;
+    width: 100%!important;
     height: 147px;
     object-fit: cover;
     opacity: 0.8;

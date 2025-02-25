@@ -24,7 +24,7 @@ const currentDogArticles = [
         description : "Виж и научи как да предпазиш кучето си от най-разпространеното и смъртоносно заболяване."
     },
     {
-        link        : "./what-for-you/are-you-ready/are-you-ready.html",
+        link        : "./what-for-you-are-you-ready-for-dog-are-you-ready.html",
         imgSrc      : "./img/index/7.png",
         title       : "Тест: Готов ли си за куче?",
         description : "Разбери дали си готов да се грижиш за любимец."
