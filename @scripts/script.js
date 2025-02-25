@@ -301,7 +301,7 @@ scrollToSectionBtn.addEventListener('click', (event) => {
 const arrowPointingDown = document.getElementById('arrow-pointing-down');
 window.addEventListener('scroll', () => {
 
-  if (window.pageYOffset > 1500) {
+  if (window.pageYOffset > 1000) {
     arrowPointingDown.style.display = "none";
   } else {
     arrowPointingDown.style.display = "block";
