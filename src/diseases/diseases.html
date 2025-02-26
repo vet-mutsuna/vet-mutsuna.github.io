@@ -1,12 +1,27 @@
 <!-- HEADER -->
 <include what="@@layout/header.html" var:title="Заболявания"></include>
-<include what="@@layout/menu.html"></include>
+<include what="@@layout/menu.html">
+    <a class="breadcrumb-link no-dec" href="./index.html">Начало</a>
+    <span class="breadcrumb-link">  &#x27A4;  </span>
+    <a class="breadcrumb-link no-dec" href="./diseases/diseases.html">Заболявания</a>
+</include>
 
     <section id="content-section">
         
         <section id="article-review">
+            <div>
+                <a href="./diseases/dog/diseases.html"><button id="dog-btn">Куче</button></a>
+                или
+                <a href="./diseases/cat/diseases.html"><button id="cat-btn">Коте</button></a>
+            </div>
             <div class="choose-message">Избери вид любимец</div>
-            <include what="@@components/diseases-dog.html"></include>
+            <ol>
+                <li>ТОП 10 заболявания, заради които посещавате ветеринар</li>
+                <li>ТОП 10 оплаквания (симптоми), заради които посещавате ветеринар</li>
+                <li>Всички заболявания при кучетата</li>
+                <li>Всички оплаквания (симптоми) при кучетата</li>
+            </ol>
+        
         </section>
         
         <section id="main-content">
