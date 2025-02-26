@@ -24,6 +24,10 @@ jobs:
       
     - name: Build amd Commit files
       run: node ./build.js
+
+    - name: Create CNAME file
+      run: | 
+        echo "mutsuna.org" > build/CNAME
       
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
