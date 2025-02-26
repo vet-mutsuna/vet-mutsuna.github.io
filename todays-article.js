@@ -89,10 +89,10 @@ const articleCollection = [
         name: "ТОП 10 оплаквания (симптоми), заради които посещавате ветеринар",
         url: "./diseases-dog-top-symptoms.html"},
     {
-        name: "Всички заболявания при котките",
+        name: "Всички заболявания при кучетата",
         url: "./diseases-dog-all-diseases.html"},
     {
-        name: "Всички оплаквания (симптоми) при котките",
+        name: "Всички оплаквания (симптоми) при кучетата",
         url: "./diseases-dog-all-symptoms.html"},
     {
         name: "Подготовка на дома",

@@ -1,4 +1,5 @@
-<html><head></head><body>#calculator-compare {
+
+#calculator-compare {
     display: flex;
     flex-direction: row;
 }
@@ -111,4 +112,4 @@ input {
     #food-result p {
         width: 100%;
     }
-}</body></html>
+}
