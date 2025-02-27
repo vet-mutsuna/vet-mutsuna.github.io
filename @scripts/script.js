@@ -220,6 +220,12 @@ function addPrintPageBreaks() {
 
 window.addEventListener('load', addPrintPageBreaks);
 
+// INSTAGRAM
+document.getElementById('instagramBtn').addEventListener('click', function() {
+  const instaUrl = `https://www.instagram.com/mutsunaorg/`;
+  window.open(instaUrl, '_blank', 'width=600,height=400');
+})
+
 
 // FACEBOOK
 window.fbAsyncInit = function() {
@@ -231,14 +237,14 @@ window.fbAsyncInit = function() {
   });
 };
 
-// document.getElementById('postFacebookBtn').addEventListener('click', function() {
-//   FB.ui({
-//     method: 'share',
-//     href: window.location.href,
-//   }, function(response) {
-//     // Handle the response if needed
-//   });
-// });
+document.getElementById('postFacebookBtn').addEventListener('click', function() {
+  FB.ui({
+    method: 'share',
+    href: window.location.href,
+  }, function(response) {
+    // Handle the response if needed
+  });
+});
 
 document.getElementById('postFacebookBtn').addEventListener('click', function() {
   const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
