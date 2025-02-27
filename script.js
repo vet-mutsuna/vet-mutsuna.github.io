@@ -231,14 +231,24 @@ window.fbAsyncInit = function() {
   });
 };
 
+// document.getElementById('postFacebookBtn').addEventListener('click', function() {
+//   FB.ui({
+//     method: 'share',
+//     href: window.location.href,
+//   }, function(response) {
+//     // Handle the response if needed
+//   });
+// });
+
 document.getElementById('postFacebookBtn').addEventListener('click', function() {
-  FB.ui({
-    method: 'share',
-    href: window.location.href,
-  }, function(response) {
-    // Handle the response if needed
-  });
+  const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+  window.open(shareUrl, '_blank', 'width=600,height=400');
 });
+
+function shareOnFacebook() {
+  const url = encodeURIComponent(window.location.href);
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+      }
 
 
 // MESSENGER
